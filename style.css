@@ -1,0 +1,286 @@
+body{
+    background-color: #084C61;
+    color: #eaa000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+#caly{
+    margin: auto;
+}
+
+.divy{
+    background-color: #177E89;
+    height: 250px;
+    width: 45%;
+    margin: 2%;
+    float: left;
+    
+}
+.guzior{
+    background-color: #084C61;
+    border: 3px solid #eaa000;
+    color: #C78800;
+    width: 220px;
+    height: 40px;
+    font-size: 23px;
+}
+.guzior:hover{
+    background-color: #186982;
+}
+
+.guziki{
+    background-color: #084C61;
+    border: 3px solid #eaa000;
+    color: #C78800;
+    width: 400px;
+    height: 40px;
+    font-size: 23px;
+}
+.guziki:hover{
+    background-color: #186982;
+}
+
+#kasa{
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+#znakzap{
+    float: right;
+    margin-right: 50px;
+}
+#znakzap:hover{
+    filter: brightness(1.3);
+}
+
+#kolof{
+    float: left;
+    margin-left: 50px;
+}
+#kolof:hover{
+    filter: brightness(1.3);
+}
+
+.guziczki{
+    background-color: #084C61;
+    border: 3px solid #eaa000;
+    color: #C78800;
+    width: 200px;
+    height: 40px;
+    font-size: 23px;
+}
+
+.guziczki:hover{
+    background-color: #186982;
+}
+
+#pytanie{
+    display: none;
+}
+
+#kolofortuny{
+    display: none;
+}
+
+#baton{
+    background-color: #084C61;
+    border: 3px solid #eaa000;
+    color: #C78800;
+    width: 400px;
+    height: 40px;
+    font-size: 23px;
+}
+
+#baton:hover{
+    background-color: #186982;
+}
+
+#wygrana{
+    display: none;
+}
+
+/* zakladki */
+
+#info{
+    display: none;
+    font-size: 35px;
+}
+
+#zainte{
+    display: none;
+}
+
+#podroze{
+    display: none;
+    font-size: 35px;
+}
+
+#filmy{
+    display: none;
+    font-size: 27px;
+}
+
+/* MEMORY */
+
+#memory{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 55px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#board{
+    width: 600px;
+    height: 630px;
+    text-align: center;
+    margin: auto;
+    border: 10px solid black;
+    padding: 2px;
+
+}
+
+.card{
+    width: 125px;
+    height: 180px;
+    background-image: url('karta.jpg') ;
+    background-size: 125px;
+    display: inline-block;
+    margin: 2px;
+    border: 2px solid black;
+    transition: linear 0.1s;
+    
+
+
+}
+.card:hover{
+    border: 2px solid #EAA000;
+}
+
+.score{
+    font-size: larger;
+    margin-top: 1px;
+    font-weight: bold;
+    color:#EAA000;
+}
+
+/* MATEMATYKA */
+
+#matematyka{
+    display: none;
+    font-size: larger;
+    width: 700px;
+    margin: auto;
+}
+
+#guzik{
+    background-color: #084C61;
+    border: 3px solid #eaa000;
+    color: #C78800;
+    height: 60px;
+    width: 70px;
+    font-size: larger;
+}
+#guzik:hover{
+    background-color: #186982;
+}
+#wynik{
+    height: 50px;
+    font-size: larger;
+    background-color: #084C61;
+    border: 3px solid #eaa000;
+    color: #C78800;
+}
+::placeholder{
+    color: #ddac4186;
+}
+
+#znak::placeholder{
+    color: #122629e6;
+
+}
+
+/* ODNAJDZ SLOWO */
+
+#slowo{
+    display: none;
+}
+
+
+.life{
+    text-align: center;
+    margin: 5px;
+}
+
+.box{
+    margin: 0;
+    height: 500px;
+    display: inline-block;
+    
+}
+
+#wyraz{
+    background-color: #084C61;
+    border: 3px solid #eaa000;
+    color: #C78800;
+    text-align: center;
+    font-size: 35px;
+    color: wheat;
+}
+
+#button{
+    background-color: #084C61;
+    border: 3px solid #eaa000;
+    color: #C78800;
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+#button:hover{
+    background-color: #186982;
+
+}
+
+.life{
+    text-align: left;
+    margin: 15px;
+}
+
+.poprawna{
+    color:#39a52f
+}
+
+.zwykla{
+    color: wheat;
+}
+
+/* WISIELEC */
+
+#wisielec{
+    display: none;
+}
+
+.klasa{
+    text-align: center;
+    padding: 10px;
+}
+#znak{
+    background-color: #177E89;
+    color: #BFCDE0;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black
+}
+#rozwiazanie{
+    width: 400px;
+    margin-left: 39%;
+
+}

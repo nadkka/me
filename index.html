@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOJA WIZYTÓWKA</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <h1>MOJA WIZYTÓWKA - NADIA MARCINOWSKA</h1> 
+    <hr>
+    <img src="wheeloffortune.gif" onclick="kolo()" id="kolof" width="65">
+    <img src="znakzap.png" alt="" onclick="znakzap()" id="znakzap" width="60">
+</header>
+<h3 id="kasa">STAN KONTA: 0 $  </h3> 
+
+
+<div id="guziki"> 
+    <button id="guzik1" class="guziki" onclick="graj1()
+    losowanie()">MEMORY- ŁATWE 1$</button>
+    <button id="guzik2" class="guziki" onclick="graj2()">MATEMATYKA- ŚREDNIE 2$</button>
+    <button id="guzik3" class="guziki" onclick="graj3()">ODNAJDŹ SŁOWO- TRUDNE 3$</button>
+    <button id="guzik4" class="guziki" onclick="graj4()">WISIELEC- TRUDNE 3$</button>
+</div>
+
+<div id="caly">
+
+    <div id="a" class="divy">
+        <h2>OGÓLNE INFORMACJE</h2>
+        KOSZT: 3 $ <br> <br>
+        <button class="guzior" id="guzikA" onclick="guzior1()">ODBLOKUJ</button>
+    </div>
+
+    <div id="b" class="divy">
+        <h2>MOJE ZAINTERESOWANIA</h2>
+        KOSZT: 2 $ <br> <br>
+        <button class="guzior" id="guzikB" onclick="guzior2()">ODBLOKUJ</button>
+    </div>
+
+    <div id="c" class="divy">
+        <h2>PODRÓŻE MAŁE I DUŻE</h2>
+        KOSZT: 2 $ <br> <br>
+        <button class="guzior" id="guzikC" onclick="guzior3()">ODBLOKUJ</button>
+    </div>
+
+    <div id="d" class="divy">
+        <h2>ULUBIONE FILMY I SERIALE</h2>
+        KOSZT: 1 $ <br> <br>
+        <button class="guzior" id="guzikD" onclick="guzior4()">ODBLOKUJ</button>
+    </div>
+
+</div>
+
+<div id="pytanie">
+    Odblokuj informacje o mnie poprzez zdobywanie pieniędzy w grach! Po zdobyciu odpowiedniej liczby $ kliknij przycisk "ODBLOKUJ".
+    <h3>INSTRUKCJA DO POSZCZEGÓLNYCH GIER:</h3>
+    <h4>1. MEMORY:</h4>
+    Celem jest wyczyszczenie planszy ze zdjęć. Znajdź identyczną parę zdjęć kotów, aby je wyeliminować. Po znalezeniu wszystkich par otrzymasz 1$!
+    <br>
+    <h4>2. MATEMATYKA </h4>
+    Rozwiąż 5 działań matematycznych, aby otrzymać 2$! Możesz zaakceptować wpisany wynik klikając przycisk "ENTER" albo "OK" na ekranie.
+    <br>
+    <h4>3. ODNAJDŹ SŁOWO </h4>
+    Po wpisaniu słowa (i zaakceptowaniu przyciskiem "ENTER" albo "SPRAWDŹ!"), to słowo pojawi się nad albo pod miejscem wpisywania. Wskaże nam to, gdzie znajdywać się będzie nasze zagadkowe słowo w alfabecie, np. jeżeli wpiszemy słowo "komputer" i pojawi się ponad miejscem wpisywania, to zagadkowe słowo będzie późniejsze pod względem alfabetycznym. Jeżeli słowo zawiera literki koloru zielonego, to są one poprawnie umieszczone. Słowa mają różną długość, więc może się zdarzyć, że każda litera będzie zaznaczona na zielono. W takiej sytuacji zagadkowe słowo w pełni zaczyna się wpisanym słowem. Po rozwiązaniu zagadki otrzymasz 3$! 
+    <br>
+    <h4>4. WISIELEC</h4>
+    Typowa gra w wisielca. Rozwiąż hasło przy pomocy kategorii oraz znaków "_", które wskazują liczbę liter w haśle. Po rozwiązaniu hasła otrzymasz 3$!
+    <br>
+    <button class="guziczki" onclick="powrot()">POWRÓT</button>
+</div>
+
+<div id="kolofortuny">
+    <p id="wygrana">WYGRYWASZ:</p>
+    
+    <div id="boxkolo">
+        <button id="baton" onclick="wheel()">ZAKRĘĆ KOŁEM FORTUNY 3$</button>
+        <br>
+        <div id="bezkasy"></div>
+        <br>
+        Możliwe wygrane: bankrut, 3$, 5$, 10$ <br> <br>
+    </div>
+    <button class="guziczki" onclick="powrot()">POWRÓT</button>
+</div>
+
+<div id="info">
+    Nazywam się Nadia. <br>
+    Mam 15 lat. Urodziłam się 16 lipca 2007r. w Pile i do teraz tutaj mieszkam. <br>
+    Chodzę do drugiej klasy w Zespole Szkół Technicznych w Pile. Poszłam do szkoły podstawowej jako 6-latek. Chociaż przez większość czasu mam kontakt z osobami starszymi ode mnie, nigdy nie sprawiało mi to kłopotu. <br>
+    Jestem naturalną blondynką z niebiesko-zielonymi oczami. Mam 171cm wzrostu.
+    <br> <br> 
+    Innych, zapewne nieinteresujących, rzeczy dowiecie się po odblokowaniu reszty kategorii. :))
+    <br> <br>
+    <button class="guziczki" onclick="powrot()">POWRÓT</button>
+</div>
+
+<div id="zainte"> 
+<h2>PROGRAMOWANIE</h2> 
+Oprócz szkolnych lekcji programowania raz w tygodniu chodzę na dodatkowe, dwugodzinne zajęcia. Programuję tam najróżniejsze rzeczy. Najbardziej lubię programować strony, ale staram się robić wszystko po trochu. 
+<h2>KWIATY</h2>
+Cały mój pokój jest wypełniony kwiatami, mam ich 23. Kocham atmosferę, którą tworzą i z chęcią dodaję nowe okazy do mojej kolekcji.
+<h2>JĘZYK ANGIELSKI</h2>
+W życiu codziennym często spotykam się z językiem angielskim. Chociaż nie mam wielu znajomych z innych krajów to większość rzeczy, które przeglądam na internecie są właśnie w tym języku. Kocham czytać i oglądać anglojęzyczne książki oraz filmy.  
+<h2>SIŁOWNIA</h2>
+Pewien czas temu postanowiłam, że zacznę chodzić na siłownię. Jako, że chodzę do szkoły to nie mam tyle czasu na treningi, ile chciałabym mieć, ale staram się pogodzić jedno z drugim. :)
+<br> <br>
+<button class="guziczki" onclick="powrot()">POWRÓT</button>
+</div>
+
+<div id="podroze">
+Kocham podróżować, a jeszcze bardziej latać samolotami. Byłam w 12 krajach. Odwiedziłam wiele znanych miast, takich jak: Londyn, Barcelona, Rzym, Wenecja, Mediolan, Split, Praga, Budapeszt, Berlin, Drezno oraz Monachium. Ale także znalazłam się na kilku wyspach np.: Lanzarote, Korfu, Zakhyntos oraz Malta. Moim największym marzeniem jest polecieć na wyspy Wielkanocne i Islandię.
+<br> <br>
+<img src="zakhintos.jpg" alt="" width="500">
+<img src="lanzarote.jpg" alt="" width="500">
+<img src="london.jpeg" alt="" width="500">
+<br> <br>
+<button class="guziczki"onclick="powrot()">POWRÓT</button>
+</div>
+
+<div id="filmy">
+W wolnych chwilach najczęściej oglądam właśnie filmy. Moimi ulubionymi gatunkami jest science fiction oraz przygodowy. <br> Jestem wielką fanką Marvela. Nie mogę zdecydować się na ulubiony serial czy film, więc podam kilka. 
+<br> <br>
+Moje ulubione seriale: <br>
+    · Stranger Things <br>
+    · Wandavision <br>
+    · Daredevil <br>
+    · Wednesday <br>
+    <br>
+Moje ulubione filmy: <br>
+    · Harry Potter <br>
+    · Enola Holmes <br>
+    · Saga Star Wars <br>
+    · Avengers <br>
+    · Wall-e <br>
+    · Zaplątani <br>
+
+<br>
+<button class="guziczki" onclick="powrot()">POWRÓT</button>
+</div>
+
+<div id="memory">
+
+    <div id="board">
+        <div class="card" id="c0" onclick="odkryj(0)"></div>
+        <div class="card" id="c1" onclick="odkryj(1)"></div>
+        <div class="card" id="c2" onclick="odkryj(2)"></div>
+        <div class="card" id="c3" onclick="odkryj(3)"></div>
+
+        <div class="card" id="c4" onclick="odkryj(4)"></div>
+        <div class="card" id="c5" onclick="odkryj(5)"></div>
+        <div class="card" id="c6" onclick="odkryj(6)"></div>
+        <div class="card" id="c7" onclick="odkryj(7)"></div>
+
+        <div class="card" id="c8" onclick="odkryj(8)"></div>
+        <div class="card" id="c9" onclick="odkryj(9)"></div>
+        <div class="card" id="c10" onclick="odkryj(10)"></div>
+        <div class="card" id="c11" onclick="odkryj(11)"></div>
+
+        <div class="score">LICZNIK RUCHÓW: 0</div>
+    </div> <br>
+    <button class="guziczki"onclick="powrot()">POWRÓT</button>
+</div>
+
+<div id="matematyka">
+
+    <h3 id="punkty">PUNKTY: 0</h3>
+    <div id="dzialanie"></div>
+    <input type="number" name="" id="wynik" placeholder="WPISZ WYNIK" onkeydown="if(event.keyCode==13)
+    document.getElementById('guzik').click()">
+    <button onclick="func()" id="guzik">OK</button>
+    <div id="abc"></div> <br>
+    <button class="guziczki"onclick="powrot()">POWRÓT</button> <br> <br>
+</div>
+
+<div id="slowo">
+
+    <h3 class="life"> POZOSTAŁO <a id="life">15</a> PRÓB </h3>
+    <div id="result"></div>
+    <div class="box">
+    <div id="nad">
+
+    </div>
+    <div id="form">
+        <input type="text" name="" id="wyraz" placeholder="WPISZ WYRAZ" onkeydown="if(event.keyCode==13)
+        document.getElementById('button').click()">
+        <input type="button" value="SPRAWDŹ!" id="button" onclick="aaaa()">
+    </div>
+    <div id="pod">
+
+    </div>
+    </div> <br>
+    <button class="guziczki"onclick="powrot()">POWRÓT</button>
+</div>
+
+<div id="wisielec">
+
+    <div id="haslo" class="klasa">
+        hasło 
+    </div>
+    <div id="kategoria" class="klasa">
+
+    </div>
+    <div id="litera" class="klasa">
+        <input type="text" id="znak" size="1" placeholder="ABC..." maxlength="1" onchange="sprawdz()" autofocus>
+    </div>
+    <div id="szubienica">
+        <img src="s0.jpg">
+    </div> <br>
+    <div id="literki">
+    </div>
+        <br>
+    <button class="guziczki"onclick="powrot()">POWRÓT</button>
+
+</div>
+
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</html>
